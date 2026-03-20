@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  spark:
+    image: jupyter/pyspark-notebook:latest
+    ports:
+      - "8888:8888"   # Interfaz de Jupyter
+      - "4040:4040"   # Spark UI (Para ver el rendimiento)
+    volumes:
+      - .:/home/jovyan/work

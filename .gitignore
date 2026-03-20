@@ -1,0 +1,22 @@
+# Secretos — nunca subir
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs generados automáticamente
+logs/*.log
+
+# Datos crudos - esta ves los subimos, pero normalmente no se deberían subir
+#data/raw/*.csv
+
+# Mantener la estructura de carpetas
+!data/raw/.gitkeep
+!images/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
